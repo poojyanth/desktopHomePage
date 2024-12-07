@@ -1,0 +1,75 @@
+.app-container {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+}
+
+.left-pane {
+  flex: 1;
+  background: transparent;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.time {
+  font-size: 4rem;
+}
+
+.date,
+.day {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.right-pane {
+  flex: 2;
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todo-list,
+.weather,
+.static-info {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.todo-item:hover,
+.quote-item:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+
+.background{
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: fixed;
+}
+
+.backgroundImage{
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+  object-fit: cover;
+  position: fixed;
+}
